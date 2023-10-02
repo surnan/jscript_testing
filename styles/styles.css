@@ -15,8 +15,17 @@
 
   border-radius: 20px;
   border: none;
-
+  cursor: pointer;
 }
+
+.js-subscribe-button{
+  display: block;
+  background-color: green;
+  color: yellow;
+}
+
+
+
 
 .uber-div {
   display: flex;
@@ -25,12 +34,23 @@
   column-gap: 15px;
 }
 
-.uber-button{
+.uber-black-button{
   background-color: black;
-  color: gray;
+  color: lightgray;
   font-size: 18px;
   font-weight: 500;
-  width: 250px;
+  width: 225px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer
+}
+
+.uber-gray-later{
+  background-color: lightgray;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  width: 225px;
   height: 40px;
   border-radius: 10px;
 }

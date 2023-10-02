@@ -11,19 +11,22 @@
 
 <body>
   <div class=amazon-div>
-    <button class="amazon-cart-button" onclick="amazonButtonUI()">
+    <button
+      class="
+      amazon-cart-button
+      js-subscribe-button
+      "
+      onclick="amazonButtonUI()">
       Add to Cart
     </button>
   </div>
 
-
-
   <div class="uber-div">
-    <button class="uber-button" onclick="uberRequestNowButtonUI()">
-      Add to Cart
+    <button class="uber-button-now" onclick="uberButtonUI('uber-button-now')">
+      Request now
     </button>
-    <button class="uber-button" onclick="uberScheduleForLaterButtonUI()">
-      Add to Cart
+    <button class="uber-button-later" onclick="uberButtonUI('uber-button-later')">
+      Schedule for later
     </button>
   </div>
 </body>
