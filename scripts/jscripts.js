@@ -13,45 +13,20 @@ function amazonButtonUI() {
 
 function uberButtonUI(temp) {
   let temp2 = `.${temp}`;
+
   let chosenButton = document.querySelector(temp2);
-  let nowButton = document.querySelector('.uber-button-now');
-  let laterButton = document.querySelector('.uber-button-later');
+  let nowButton = document.querySelector('.uberNowButton');
+  let laterButton = document.querySelector('.uberLaterButton');
 
-  console.log('cc', typeof (laterButton.style.backgroundColor));
-
-  if (nowButton.style.backgroundColor === '.black') {
-    console.log('triggered by black');
+  if (chosenButton.innerText === 'Request now') {
+    nowButton.classList.add('uberBlackButton');
+    nowButton.classList.remove('uberGrayButton');
+    laterButton.classList.add('uberGrayButton');
+    laterButton.classList.remove('uberBlackButton');
   } else {
-    console.log('triggered by gray');
+    nowButton.classList.add('uberGrayButton');
+    nowButton.classList.remove('uberBlackButton');
+    laterButton.classList.add('uberBlackButton');
+    laterButton.classList.remove('uberGrayButton');
   }
 }
-
-
-
-
-/*
-
-  // console.log('temp =', temp);
-
-
-  // if (temp.style.backgroundColor === 'black') {
-  //   console.log('black found');
-  // } else {
-  //   console.log('gray found');
-  // }
-
-  // nowButton.style.backgroundColor = 'orange';
-  // laterButton.style.backgroundColor = 'blue';
-  // chosenButton.style.backgroundColor = 'purple';
-
-  // console.log('currently = ', chosenButton.style.backgroundColor);
-  // console.log('currently = ', nowButton.style.backgroundColor);
-  // console.log('currently = ', laterButton.style.backgroundColor);
-
-
-
-  // console.log(chosenButton);
-  // console.log('nowButton', nowButton);
-  // console.log('laterButton', laterButton);
-  // console.log('=============');
-*/
